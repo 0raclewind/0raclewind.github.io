@@ -156,3 +156,15 @@
 		background-color: #8A6700;
 	}
 }
+
+@media (max-width: 640px) {
+	body {
+		background-color: #3D6E96;
+	}
+}
+
+@media (max-width: 480px) {
+	body {
+		background-color: #67FF62;
+	}
+}
