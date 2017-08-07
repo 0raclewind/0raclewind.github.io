@@ -16,3 +16,14 @@
 .content {
   margin-top: 10px;
 }
+
+.home_greeting {
+  margin-top: 5%;
+  background-color: #ddd !important;
+  color: #777 !important;
+
+}
+
+button {
+  width: 100px !important;
+}

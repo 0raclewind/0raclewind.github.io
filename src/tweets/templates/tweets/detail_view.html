@@ -3,8 +3,16 @@
 {% block title %}Post details{% endblock title %}
 
 {% block content %}
-<br>
-{{ object.user }}<br>
-{{ object.content }}<br>
-{{ object.timestamp|timesince }} ago<br>
+<div class="container text-center">
+  <br>
+  {{ object.user }}<br>
+  {{ object.content }}<br>
+  {{ object.timestamp|timesince }} ago<br>
+  <a href="{{ obj.get_absulute_url }}delete/">
+    <button type="button" name="button">Delete</button>
+  </a>
+  <a href="{{ obj.get_absulute_url }}edit/">
+    <button type="button" name="button">Edit</button>
+  </a>
+</div>
 {% endblock content %}
