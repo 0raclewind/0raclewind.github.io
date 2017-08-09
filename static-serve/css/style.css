@@ -8,11 +8,30 @@
 }
 
 .navbar-default {
-  background-color: #eee !important;
+  background-color: #ddd !important;
   border: solid 1px #ccc !important;
   margin-top: -2px;
 }
 
 .content {
   margin-top: 10px;
+}
+
+.home_greeting {
+  margin-top: 5%;
+  background-color: #ddd !important;
+  color: #555 !important;
+
+}
+
+button {
+  width: 100px !important;
+}
+
+.tweet_list {
+  color: #555;
+}
+
+.form-control {
+  border-radius: 15px !important;
 }

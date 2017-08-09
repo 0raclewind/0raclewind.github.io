@@ -1,5 +1,16 @@
-<h3>Confirm delete</h3>
-<form action="" method="post">{% csrf_token %}
-    <p>Are you sure you want to delete "{{ object }}"?</p>
-    <input type="submit" value="Confirm" />
-</form>
+{% extends 'base.html' %}
+
+{% block title %}Post details{% endblock title %}
+
+{% block content %}
+<div class="container text-center">
+  <h3>Confirm delete</h3>
+  <form action="" method="post">{% csrf_token %}
+      <p>Are you sure you want to delete "{{ object }}"?</p>
+      <input class="btn btn-primary search_btn btn-xs" type="submit" value="Confirm" />
+      <a href="../">
+        <button class="btn btn-danger search_btn btn-xs" type="button" name="button">Cancel</button>
+      </a>
+  </form>
+</div>
+{% endblock content %}

@@ -3,16 +3,18 @@
 {% block title %}Post details{% endblock title %}
 
 {% block content %}
-<div class="container text-center">
+<div class="container col-sm-6 col-sm-offset-3 text-center">
   <br>
   {{ object.user }}<br>
   {{ object.content }}<br>
-  {{ object.timestamp|timesince }} ago<br>
-  <a href="{{ obj.get_absulute_url }}delete/">
-    <button type="button" name="button">Delete</button>
-  </a>
+  {{ object.timestamp|timesince }} ago
+  <br>
+  <br>
   <a href="{{ obj.get_absulute_url }}edit/">
-    <button type="button" name="button">Edit</button>
+    <button class="btn btn-primary search_btn btn-xs" type="button" name="button">Edit</button>
+  </a>
+  <a href="{{ obj.get_absulute_url }}delete/">
+    <button class="btn btn-danger search_btn btn-xs" type="button" name="button">Delete</button>
   </a>
 </div>
 {% endblock content %}
