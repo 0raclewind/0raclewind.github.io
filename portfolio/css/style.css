@@ -1,0 +1,48 @@
+body {
+  background-color: #777;
+}
+
+.navbar {
+  background-color: #0C403D;
+  border-radius: 0px;
+}
+
+.collapsed {
+  border: 1px solid white !important;
+}
+
+.collapsed:hover {
+  background-color: #46BF93 !important;
+}
+
+ul a {
+  color: #fff !important;
+}
+
+ul a:hover {
+  color: #46BF93 !important;
+}
+
+.content {
+  max-width: 1024px;
+}
+
+.home {
+  height: 50%px;
+  margin-top: 2%;
+  /*background-color: #333;*/
+  background-image: url('../img/klava.jpg');
+  background-size: cover;
+}
+
+.home img {
+  margin-top: 10%;
+  padding: 15%;
+}
+
+.home p {
+  text-shadow: 2px 2px #000;
+  color: white;
+  font-size: 18px;
+  margin-top: 20%;
+}
