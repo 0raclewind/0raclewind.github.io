@@ -25,8 +25,8 @@
         <div class="collapse navbar-collapse navbar-right" id="mainNavBar">
           <ul class="nav navbar-nav">
             <li><a href="#">Home</a></li>
-            <li><a href="#">Portfolio</a></li>
-            <li><a href="#">Contact</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
           </ul>
         </div><!-- /.navbar-collapse -->
       </div><!-- /.container-fluid -->
@@ -40,7 +40,7 @@
           <img src="img/profile.jpg" alt="" class="img-responsive img-circle">
         </div>
       </div>
-      <div class="row portfolio">
+      <div class="row portfolio" id=portfolio>
         <div class="row text-center">
           <h1>Portfolio</h1>
         </div>
@@ -62,7 +62,55 @@
             <img class="img-responsive" src="img/tweeternity.jpg" alt="">
           </div>
         </div>
+        <hr>
+      </div>
+      <div class="row contact" id=contact>
+        <div class="row text-center">
+          <h1>CONTACT ME</h1>
+        </div>
+        <hr class="star-dark">
+        <div class="row contact-form">
+          <div class="col-sm-5 col-sm-offset-1">
+            <form id="contactForm">
+              <div class="form-item">
+                <input id=name type="text" placeholder="Name" class=form-control />
+              </div>
+              <div class="form-item">
+                <input id=email type="text" placeholder="Email address" class=form-control />
+              </div>
+              <div class="form-item">
+                <input id=phone type="text" placeholder="Phone number" class=form-control />
+              </div>
+              <div class="form-item">
+                <textarea id="message" rows="5" placeholder="Message" class=form-control></textarea>
+              </div><br>
+              <button type="submit" name="button" class="btn btn-primary">Send</button>
+            </form>
+          </div>
+          <div class="col-sm-6">
+            <p>Want to get in touch with me? Be it to request more info about myself or my experience, to ask for my resume, tips on how to solve your sudoku, random questions about the universe and the meaning of life, just feel free to drop me a line anytime.</p>
+            <p>I will reply A.S.A.P.</p>
+          </div>
+        </div>
+      </div>
+      <div class="row text-center find">
+        <h1>FIND ME ON INTERNET</h1>
+        <a href="https://github.com/0raclewind">
+          <img src="img/icons/github.png" alt="" target=_blank>
+        </a>
+        <a href="https://plus.google.com/u/0/104710750865766520189">
+          <img src="img/icons/googleplus.png" alt="" target=_blank>
+        </a>
+        <a href="#">
+          <img src="img/icons/linkedin.png" alt="" target=_blank>
+        </a>
+        <a href="https://twitter.com/bordaxas">
+          <img src="img/icons/twitter.png" alt="" target=_blank>
+        </a>
       </div>
     </div>
+    <footer class="container-fluid text-center">
+      <p>Valdo Mocovich &copy 2017</p>
+    </footer>
   </body>
 </html>

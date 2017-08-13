@@ -32,9 +32,7 @@ ul a:hover {
 }
 
 .home {
-  height: 1000px;
   margin-top: 2%;
-  /*background-color: #333;*/
   background-image: url('../img/klava.jpg');
   background-size: cover;
 }
@@ -53,12 +51,17 @@ ul a:hover {
 
 .portfolio {
   padding-top: 5%;
-  color: #666;
+  color: #777;
   background-color: #fff;
 }
 
 .portfolio_item {
   margin: 5% 2% 0 2%;
+}
+
+.portfolio_item img {
+  border: 1px solid #aaa;
+  border-radius: 10px;
 }
 
 .description {
@@ -70,6 +73,48 @@ ul a:hover {
   font-size: 20px;
 }
 
-.portfolio_item img {
-  /*padding-right: 3%;*/
+form {
+  padding: 4%;
+}
+
+.form-item {
+  margin-top: 2%;
+}
+
+.contact {
+  background-color: #444;
+}
+
+.contact p {
+  font-size: 18px;
+  color: #ccc;
+  padding: 5%;
+}
+
+.contact h1 {
+  color: #ccc;
+  font-size: 40px;
+  font-weight: 500;
+}
+
+.find {
+  padding: 5% 0 %5 0;
+  background-color: #aaa;
+}
+
+.find h1 {
+  padding-top: 5%;
+}
+
+.find img {
+  width: 100px;
+  padding-bottom: 5%;
+}
+
+footer {
+  background-color: #0C403D;
+  height: 50px;
+  color: #ddd;
+  font-size: 15px;
+  padding-top: 15px;
 }
