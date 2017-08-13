@@ -7,12 +7,16 @@ body {
   border-radius: 0px;
 }
 
-.collapsed {
+.navbar-toggle {
   border: 1px solid white !important;
 }
 
-.collapsed:hover {
+.navbar-toggle:hover {
   background-color: #46BF93 !important;
+}
+
+.navbar-toggle:active {
+  background-color: red;
 }
 
 ul a {
@@ -43,6 +47,6 @@ ul a:hover {
 .home p {
   text-shadow: 2px 2px #000;
   color: white;
-  font-size: 18px;
+  font-size: 22px;
   margin-top: 20%;
 }
