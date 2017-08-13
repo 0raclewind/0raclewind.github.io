@@ -73,6 +73,8 @@ body {
 
 .portfolio h1, .contact h1 {
   text-align: center;
+  font-size: 40px;
+  font-weight: 800;
 }
 
 .portfolio_item {
@@ -114,8 +116,6 @@ form {
 .contact h1 {
   padding-top: 20px;
   color: #ccc;
-  font-size: 40px;
-  font-weight: 500;
 }
 
 .find {
@@ -125,6 +125,7 @@ form {
 
 .find h1 {
   padding-top: 5%;
+  font-weight: 800;
 }
 
 .find img {
