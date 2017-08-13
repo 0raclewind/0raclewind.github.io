@@ -3,9 +3,11 @@ body {
   padding-top: 50px;
 }
 
+/*Navbar items*/
 .navbar {
   background-color: #0C403D;
   border-radius: 0px;
+  color: #eee !important;
 }
 
 .navbar-toggle {
@@ -20,12 +22,25 @@ body {
   background-color: #0B6341 !important;
 }
 
-ul a {
-  color: #fff !important;
+.navbar-brand {
+  font-size: 25px;
 }
 
-ul a:hover {
+.navbar-nav a, .navbar-header a {
+  color: #ddd !important;
+}
+
+.navbar-nav a:hover {
   color: #46BF93 !important;
+}
+
+.nav .btn, .contact .btn {
+  background-color: None;
+  font-size: 20px;
+}
+
+.nav .btn:hover {
+  background-color: #003340 !important;
 }
 
 .content {
