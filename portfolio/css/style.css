@@ -15,8 +15,8 @@ body {
   background-color: #46BF93 !important;
 }
 
-.navbar-toggle:active {
-  background-color: red;
+.navbar-toggle:focus {
+  background-color: #0B6341 !important;
 }
 
 ul a {
@@ -32,7 +32,7 @@ ul a:hover {
 }
 
 .home {
-  height: 50%px;
+  height: 1000px;
   margin-top: 2%;
   /*background-color: #333;*/
   background-image: url('../img/klava.jpg');
@@ -49,4 +49,27 @@ ul a:hover {
   color: white;
   font-size: 22px;
   margin-top: 20%;
+}
+
+.portfolio {
+  padding-top: 5%;
+  color: #666;
+  background-color: #fff;
+}
+
+.portfolio_item {
+  margin: 5% 2% 0 2%;
+}
+
+.description {
+  padding-top: 5%;
+  text-align: center;
+}
+
+.description p {
+  font-size: 20px;
+}
+
+.portfolio_item img {
+  /*padding-right: 3%;*/
 }
