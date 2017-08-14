@@ -66,7 +66,7 @@ body {
 }
 
 .portfolio {
-  padding-top: 5%;
+  padding-top: 30px;
   color: #777;
   background-color: #fff;
 }
@@ -78,7 +78,7 @@ body {
 }
 
 .portfolio_item {
-  margin: 5% 2% 0 2%;
+  margin: 3% 2% 0 2%;
 }
 
 .portfolio_item img {
@@ -117,7 +117,7 @@ form {
 }
 
 .contact h1 {
-  padding-top: 20px;
+  padding-top: 30px;
   color: #ccc;
 }
 
