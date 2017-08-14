@@ -49,7 +49,7 @@ body {
 
 .home {
   /*margin-top: 5%;*/
-  background-image: url('../img/klava.jpg');
+  background-image: url('../img/kb.jpg');
   background-size: cover;
 }
 
@@ -104,13 +104,16 @@ form {
 }
 
 .contact {
-  background-color: #444;
+  /*background-color: #444;*/
+  background-image: url('../img/code.jpg');
+  background-size: cover;
 }
 
 .contact p {
   font-size: 18px;
   color: #ccc;
   padding: 5%;
+  text-shadow: 1px 1px #000;
 }
 
 .contact h1 {
@@ -120,7 +123,8 @@ form {
 
 .find {
   padding: 5% 0 %5 0;
-  background-color: #aaa;
+  background-color: #fff;
+  color: #777;
 }
 
 .find h1 {
