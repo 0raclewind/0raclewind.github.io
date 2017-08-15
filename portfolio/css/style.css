@@ -34,6 +34,10 @@ body {
   color: #46BF93 !important;
 }
 
+.section_active {
+  background-color: #005266;
+}
+
 .nav .btn, .contact .btn {
   background-color: None;
   font-size: 20px;
@@ -49,8 +53,9 @@ body {
 
 .home {
   /*margin-top: 5%;*/
-  background-image: url('../img/kb.jpg');
+  background-image: url('../img/kb2.jpg');
   background-size: cover;
+  background-position: top center;
 }
 
 .home img {
@@ -66,7 +71,7 @@ body {
 }
 
 .portfolio {
-  padding-top: 30px;
+  padding-top: 3%;
   color: #777;
   background-color: #fff;
 }
@@ -104,7 +109,6 @@ form {
 }
 
 .contact {
-  /*background-color: #444;*/
   background-image: url('../img/code.jpg');
   background-size: cover;
 }
@@ -117,7 +121,7 @@ form {
 }
 
 .contact h1 {
-  padding-top: 30px;
+  padding-top: 3%;
   color: #ccc;
 }
 
