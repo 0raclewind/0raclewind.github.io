@@ -71,7 +71,7 @@ body {
 }
 
 .portfolio {
-  padding-top: 3%;
+  /*padding-top: 1%;*/
   color: #777;
   background-color: #fff;
 }
@@ -80,6 +80,7 @@ body {
   text-align: center;
   font-size: 40px;
   font-weight: 800;
+  padding: 3% 0 3%;
 }
 
 .portfolio_item {
@@ -121,7 +122,6 @@ form {
 }
 
 .contact h1 {
-  padding-top: 3%;
   color: #ccc;
 }
 
