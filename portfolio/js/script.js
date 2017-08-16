@@ -2,7 +2,6 @@ $(document).ready(function() {
   $("body").on('click','#mainNavBar', function(){ $(this).collapse("hide") });
   setBindings();
   parallax();
-  scrollLinks();
 });
 
 //Smooth scrolling
