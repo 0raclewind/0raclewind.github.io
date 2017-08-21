@@ -39,17 +39,17 @@
 
 .footer a {
   text-decoration: none;
-  color: #b7d1df;
+  color: white;
   font-weight: 800;
 }
 
 .footer a:hover {
-  color: rgb(99, 127, 181);
+  opacity: 0.6;
 }
 
 @media (max-width: 768px) {
   .box {
     padding: 1%;
-    margin: 40% 2% 0 2%;
+    margin: 50% 2% 0 2%;
   }
 }
