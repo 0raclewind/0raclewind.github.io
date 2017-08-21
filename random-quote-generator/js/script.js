@@ -24,13 +24,11 @@ var quotes = [
 ];
 
 function rndColor() {
-    var r = Math.floor(Math.random() * 100) + 30;
-    var g = Math.floor(Math.random() * 100) + 30;
-    var b = Math.floor(Math.random() * 100) + 30;
+    var r = Math.floor(Math.random() * 100) + 50;
+    var g = Math.floor(Math.random() * 100) + 50;
+    var b = Math.floor(Math.random() * 100) + 50;
     return "rgb(" + r + ", " + g + ", " + b + ")";
 }
-
-console.log(rndColor());
 
 function rndNum() {
   return Math.floor(Math.random() * quotes.length);
@@ -42,24 +40,20 @@ function randomQuote() {
   document.getElementById("author").innerHTML = "- " + quotes[index].author;
 }
 
+var quote ="#quote, #author";
+
 $(document).ready(function() {
   var openingColor = rndColor();
   $("body, .btn-lg").css({backgroundColor: openingColor});
-  $("#quote, #author").css({color: openingColor});
+  $(quote).css({color: openingColor});
   $("#btn").on("click", function() {
     randomColor = rndColor();
-    $("#quote, #author").animate({
-      opacity: 0
-    }, 800);
-    $("body, .btn-lg").animate({backgroundColor: randomColor}, 1600);
-    $("#quote, #author").animate({
-      color: randomColor,
-      margin: 0,
-      opacity: 1
-    }, 800);
+    $(quote).slideUp({duration: 500});
+    $(quote).slideDown({duration: 500});
+    $("body, .btn-lg").animate({backgroundColor: randomColor}, 1000);
     setTimeout(function() {
-      $("#quote, #author").css({marginLeft: "500px", marginRight: "-500px"})
+      $(quote).css({color: randomColor});
       randomQuote()
-    }, 800);
+    }, 500);
   });
 });
