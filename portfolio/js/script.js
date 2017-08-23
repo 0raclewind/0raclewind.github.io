@@ -33,6 +33,6 @@ function setBindings() {
 function parallax() {
   $(window).scroll(function() {
     var wScroll = $(window).scrollTop();
-    $(".parallax-bg").css("background-position", "center " + (wScroll / 2) + "px")
+    $(".parallax-bg").css("background-position", "center " + (wScroll / 3) + "px")
   })
 }

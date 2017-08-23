@@ -1,4 +1,5 @@
 var quotes = [
+  {author: "Valdo Mocovich", quote: "This is random QUOTE machine. Have fun using it!"},
   {author: "Dr.Seuss", quote: "Don't cry because it's over, smile because it happened."},
   {author: "Oscar Wilde", quote: "I am so clever that sometimes I don't understand a single word of what I am saying."},
   {author: "Marcus Tullius Cicero", quote: "A room without books is like a body without a soul."},
@@ -35,9 +36,10 @@ function rndNum() {
 }
 
 function randomQuote() {
-  var index = rndNum();
+  var index = rndNum() + 1;
   document.getElementById("quote").innerHTML = '<i id=blockquote class="fa fa-quote-right fa-2x"></i>' + quotes[index].quote;
   document.getElementById("author").innerHTML = "- " + quotes[index].author;
+  $('#tweet-quote').attr('href', 'https://twitter.com/intent/tweet?hashtags=quotes&related=freecodecamp&text=' + encodeURIComponent('"' + quotes[index].quote + '" -' + quotes[index].author));
 }
 
 var quote ="#quote, #author";
@@ -46,11 +48,16 @@ $(document).ready(function() {
   var openingColor = rndColor();
   $("body, .btn-lg").css({backgroundColor: openingColor});
   $(quote).css({color: openingColor});
+  $("#twitter-icon").css({color: openingColor});
+  // $("#twitter-icon").hide();
+  document.getElementById("quote").innerHTML = '<i id=blockquote class="fa fa-quote-right fa-2x"></i>' + quotes[0].quote;
+  document.getElementById("author").innerHTML = "- " + quotes[0].author;
   $("#btn").on("click", function() {
     randomColor = rndColor();
     $(quote).slideUp({duration: 500});
     $(quote).slideDown({duration: 500});
     $("body, .btn-lg").animate({backgroundColor: randomColor}, 1000);
+    $("#twitter-icon").animate({color: randomColor}, 1000);
     setTimeout(function() {
       $(quote).css({color: randomColor});
       randomQuote()
