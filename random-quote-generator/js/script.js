@@ -48,7 +48,6 @@ function rndNum() {
 
 function randomQuote() {
   var index = rndNum() + 1;
-  console.log("Index: " + index);
   document.getElementById("quote").innerHTML = '<i id=blockquote class="fa fa-quote-right fa-2x"></i>' + quotes[index].quote;
   document.getElementById("author").innerHTML = "- " + quotes[index].author;
   $('#tweet-quote').attr('href', 'https://twitter.com/intent/tweet?hashtags=quotes&related=freecodecamp&text=' + encodeURIComponent('"' + quotes[index].quote + '" -' + quotes[index].author));
@@ -57,7 +56,6 @@ function randomQuote() {
 var quote ="#quote, #author";
 
 $(document).ready(function() {
-  console.log("Quotes: " + quotes.length);
   var openingColor = rndColor();
   $("body, .btn-lg").css({backgroundColor: openingColor});
   $(quote).css({color: openingColor});
