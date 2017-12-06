@@ -83,6 +83,15 @@ body {
   padding: 3% 0 3%;
 }
 
+.portfolio a {
+  color: #777;
+  text-decoration: none;
+}
+
+.portfolio a:hover {
+  color: #0C403D;
+}
+
 .portfolio_item {
   margin: 3% 2% 0 2%;
 }
