@@ -3,45 +3,39 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="icon" href="icon.png" type="image/png">
     <link href="https://fonts.googleapis.com/css?family=Cabin:700i" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="../resources/bootstrap-3.3.7/css/bootstrap.min.css">
-    <link rel="stylesheet" href="../resources/bootstrap-3.3.7/css/bootstrap-theme.min.css">
-    <link rel="stylesheet" href="../resources/font-awesome-4.7.0/css/font-awesome.min.css">
-    <title>Quote generator</title>
+    <title>The mine</title>
   </head>
   <body>
-    <div class="container box col-md-8 col-md-offset-2" id=quotebox>
+    <div class="container box col-md-6 col-md-offset-3" id=quotebox>
       <div class="row">
         <div class=text-center id=quote>
+          <i id=blockquote class="fa fa-quote-right fa-2x"></i>This is random QUOTE machine. Have fun using it!
         </div>
       </div>
       <div class="row">
         <div class="pull-right" id=author>
+          - Valdo Mocovich
         </div>
       </div>
       <div class="row">
-        <div class="col-xs-6 col-lg-6">
-          <a id=tweet-quote>
-            <i class="fa fa-twitter-square fa-4x" id="twitter-icon"></i>
-          </a>
-        </div>
-        <div class="col-xs-6 col-lg-6" >
-          <div class="pull-right">
-            <input type="button" value="Get Quote" class="btn-lg" id=btn>
-          </div>
+        <div class="pull-right">
+          <input type="button" value="Get Quote" class="btn-lg" id=btn>
         </div>
       </div>
     </div>
     <div class="container col-md-6 col-md-offset-3">
       <div class="row text-center footer">
-        <p>made by <a href="https://github.com/0raclewind" title="GitHub profile" target=_blank>Valdo</a></p>
+        <p>made by <a href="https://0raclewind.github.io/" title="GitHub profile" target=_blank>Valdo</a></p>
       </div>
     </div>
-    <script src="../resources/jquery-3.2.1.min.js"></script>
-    <script src="../resources/jquery-ui/jquery-ui.min.js"></script>
-    <script src="../resources/bootstrap-3.3.7/js/bootstrap.min.js"></script>
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="css/jquery-ui/jquery-ui.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
     <script type="text/javascript" src="js/script.js"></script>
   </body>
 </html>
