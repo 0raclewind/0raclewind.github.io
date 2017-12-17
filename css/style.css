@@ -173,12 +173,17 @@ form {
 @media (min-width: 992px) {
   .home p {
     padding: 5%;
-    /*margin-top: 100px;*/
-    /*font-size: 26px;*/
   }
 }
 
-@media(max-width: 768px) {
+@media (min-width: 768px) {
+  .home p {
+    padding: 5%;
+    font-size: 20px;
+  }
+}
+
+@media(max-width: 480px) {
   .home p {
     padding: 1%;
     font-size: 18px;
