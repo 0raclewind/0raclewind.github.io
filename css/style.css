@@ -5,7 +5,7 @@ body {
 
 /*Navbar items*/
 .navbar {
-  background-color: #0C403D;
+  background-color: #00464e;
   border-radius: 0px;
   color: #eee !important;
 }
@@ -151,7 +151,7 @@ form {
 }
 
 .footer {
-  background-color: #0C403D;
+  background-color: #00464e;
   height: 50px;
   color: #ddd;
   font-size: 15px;
