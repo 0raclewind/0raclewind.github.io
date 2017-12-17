@@ -158,6 +158,18 @@ form {
   padding-top: 15px;
 }
 
+.theCoder {
+  font-family: monospace;
+  font-family: 'Press Start 2P', cursive;
+  font-size: 12px;
+}
+
+.valdo {
+  font-family: 'Archivo Black', sans-serif;
+  font-size: 28px;
+  letter-spacing: 5px;
+}
+
 @media (min-width: 992px) {
   .home p {
     padding: 5%;
@@ -168,8 +180,8 @@ form {
 
 @media(max-width: 768px) {
   .home p {
-    padding: 5%;
-    font-size: 26px;
+    padding: 1%;
+    font-size: 18px;
   }
   .home img {
     margin-top: 0;

@@ -13,10 +13,11 @@
 }
 
 .btn-lg {
+  margin-top: 7px;
   color: #b7d1df !important;
   border-radius: 5px;
-  border: none;
-  margin-top: 5px;
+  border: 1px solid #777;
+  /*width: 100px;*/
 }
 
 .split {
@@ -38,22 +39,27 @@
 }
 
 .footer a {
-  color: white;
+  text-decoration: none;
+  color: #b7d1df;
   font-weight: 800;
 }
 
 .footer a:hover {
-  text-decoration: none;
-  opacity: 0.6;
+  color: rgb(99, 127, 181);
 }
 
-/*#twitter-icon {
-  color: red;
-}*/
+.twitter-icon {
+  width: 60px;
+  height: 60px;
+  -webkit-mask: url("../twitter.svg") no-repeat 50% 50%;
+  mask: url("../twitter.svg") no-repeat 50% 50%;
+  -webkit-mask-size: cover;
+  mask-size: cover;
+}
 
 @media (max-width: 768px) {
   .box {
     padding: 1%;
-    margin: 50% 2% 0 2%;
+    margin: 40% 2% 0 2%;
   }
 }

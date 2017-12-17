@@ -1,5 +1,4 @@
 var quotes = [
-  {author: "Valdo Mocovich", quote: "This is random QUOTE machine. Have fun using it!"},
   {author: "Dr.Seuss", quote: "Don't cry because it's over, smile because it happened."},
   {author: "Oscar Wilde", quote: "I am so clever that sometimes I don't understand a single word of what I am saying."},
   {author: "Marcus Tullius Cicero", quote: "A room without books is like a body without a soul."},
@@ -22,17 +21,6 @@ var quotes = [
   {author: "Brian Tracy", quote: "Reading Is To The Mind, As Exercise Is To The Body."},
   {author: "LeBron James", quote: "I like criticism. It makes you strong."},
   {author: "Usain Bolt", quote: "There are better starters than me but I’m a strong finisher."},
-  {author: "Dennis Ritchie", quote: "UNIX is basically a simple operating system, but you have to be a genius to understand the simplicity."},
-  {author: "Confucius", quote: "Choose a job you love, and you will never have to work a day in your life."},
-  {author: "Eleanor Roosevelt", quote: "The future belongs to those who believe in the beauty of their dreams."},
-  {author: "W. Clement Stone", quote: "Aim for the moon. If you miss, you may hit a star."},
-  {author: "Sam Levenson", quote: "Don’t watch the clock; do what it does. Keep going."},
-  {author: "Walt Disney", quote: "All our dreams can come true if we have the courage to pursue them."},
-  {author: "Edward Snowden", quote: "Even if you're not doing anything wrong, you are being watched and recorded."},
-  {author: "Anonymous", quote: "If it doesn't challenge you, it won't change you."},
-  {author: "Arthur Ashe", quote: "Start where you are. Use what you have. Do what you can."},
-  {author: "Robert Kiyosaki", quote: "Don't let the fear of losing be greater than the excitement of winning."},
-  {author: "Helen Hayes", quote: "Every expert was once beginner"},
 ];
 
 function rndColor() {
@@ -42,33 +30,25 @@ function rndColor() {
     return "rgb(" + r + ", " + g + ", " + b + ")";
 }
 
-function rndNum() {
-  return Math.floor(Math.random() * (quotes.length - 1));
-}
 
 function randomQuote() {
-  var index = rndNum() + 1;
+  var index = Math.floor(Math.random() * quotes.length);
   document.getElementById("quote").innerHTML = '<i id=blockquote class="fa fa-quote-right fa-2x"></i>' + quotes[index].quote;
   document.getElementById("author").innerHTML = "- " + quotes[index].author;
-  $('#tweet-quote').attr('href', 'https://twitter.com/intent/tweet?hashtags=quotes&related=freecodecamp&text=' + encodeURIComponent('"' + quotes[index].quote + '" -' + quotes[index].author));
+  $('.linkToTwitter').attr('href', 'https://twitter.com/intent/tweet?text='+ quotes[index].quote + " - " + quotes[index].author).attr('target', '_blank');
 }
 
 var quote ="#quote, #author";
 
 $(document).ready(function() {
   var openingColor = rndColor();
-  $("body, .btn-lg").css({backgroundColor: openingColor});
+  $("body, .btn-lg, .twitter-icon").css({backgroundColor: openingColor});
   $(quote).css({color: openingColor});
-  $("#twitter-icon").css({color: openingColor});
-  // $("#twitter-icon").hide();
-  document.getElementById("quote").innerHTML = '<i id=blockquote class="fa fa-quote-right fa-2x"></i>' + quotes[0].quote;
-  document.getElementById("author").innerHTML = "- " + quotes[0].author;
   $("#btn").on("click", function() {
     randomColor = rndColor();
     $(quote).slideUp({duration: 500});
     $(quote).slideDown({duration: 500});
-    $("body, .btn-lg").animate({backgroundColor: randomColor}, 1000);
-    $("#twitter-icon").animate({color: randomColor}, 1000);
+    $("body, .btn-lg, .twitter-icon").animate({backgroundColor: randomColor}, 1000);
     setTimeout(function() {
       $(quote).css({color: randomColor});
       randomQuote()
