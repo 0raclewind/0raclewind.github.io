@@ -39,6 +39,7 @@ body, html {
 
 .navbar-nav a, .navbar-header a {
   color: #ccc !important;
+  font-weight: bold;
 }
 
 .navbar-nav a:hover {
@@ -90,10 +91,11 @@ color: #fff !important;
 }
 
 .home h1 {
-  text-shadow: 2px 2px #666;
+  text-shadow: 2px 2px #333;
   text-align: center;
   color: white;
   font-size: 2.5em;
+  font-weight: 300;
 }
 
 .home h1:first-child {
@@ -276,6 +278,10 @@ color: #fff !important;
 }
 
 @media only screen and (min-width: 768px) {
+  .navbar-nav a {
+    font-weight: 400;
+  }
+
   .content {
     height: 100%;
   }
@@ -446,7 +452,29 @@ color: #fff !important;
     }
   }
 
+  @media only screen and (min-height: 480px) {
+    .home h1:first-child {
+      margin-top: 15%;
+    }
+
+    .about-title {
+      padding-bottom: 10%;
+    }
+
+    .about p {
+      font-size: 26px;
+    }
+  }
+
   @media only screen and (min-height: 768px) {
+    .home {
+      padding: 10%;
+    }
+
+    .home h1:first-child {
+      margin-top: 5%;
+    }
+
     .about-title {
       padding-bottom: 15%;
     }
@@ -454,6 +482,16 @@ color: #fff !important;
     .about p {
       font-size: 30px;
       padding-top: 2%;
+    }
+  }
+
+  @media only screen and (min-height: 900px) {
+    .home h1:first-child {
+      margin-top: 15%;
+    }
+
+    .about p {
+      font-size: 34px;
     }
   }
 }
