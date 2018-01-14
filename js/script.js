@@ -58,7 +58,6 @@ function objectAppear() {
     windowHeight = $(window).height();
     scrollFromTop = $(window).scrollTop();
     windowScrollPosBottom = scrollFromTop + windowHeight;
-
     $('.project').revealOnScroll();
 
   })
