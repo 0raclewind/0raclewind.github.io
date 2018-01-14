@@ -21,6 +21,7 @@ var quotes = [
   {author: "Brian Tracy", quote: "Reading Is To The Mind, As Exercise Is To The Body."},
   {author: "LeBron James", quote: "I like criticism. It makes you strong."},
   {author: "Usain Bolt", quote: "There are better starters than me but I’m a strong finisher."},
+  {author: "Walt Disney", quote: "If you can dream it you can do it!"}
 ];
 
 function rndColor() {
