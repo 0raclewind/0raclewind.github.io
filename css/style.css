@@ -263,6 +263,13 @@ color: #fff !important;
   text-align: center;
 }
 
+/*iPhone 4/5 specific*/
+@media only screen and (min-width: 320px) {
+  .home {
+    padding: 5%;
+  }
+}
+
 @media only screen and (min-width: 330px) {
   .home {
     padding-top: 15%;
