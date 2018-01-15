@@ -52,6 +52,24 @@ function objectAppear() {
     });
   }
 
+  jQuery.fn.typeOnScroll = function(itemName, scrollOffset) {
+    return this.each(function() {
+      var itemOffset = $(this).offset().top + scrollOffset;
+        if (!$(this).hasClass('animation-complete')) {
+          if (windowScrollPosBottom > itemOffset) {
+            new TypeIt(this, {
+              strings: itemName,
+              speed: 50,
+              autoStart: false,
+              loop: false,
+              cursor: false
+            });
+            $(this).addClass('animation-complete');
+          }
+      }
+    });
+  }
+
   $('.project').revealOnScroll();
 
   $(window).on('scroll', function() {
@@ -59,6 +77,9 @@ function objectAppear() {
     scrollFromTop = $(window).scrollTop();
     windowScrollPosBottom = scrollFromTop + windowHeight;
     $('.project').revealOnScroll();
+    $('#projectsName').typeOnScroll('PORTFOLIO', 170);
+    $('.about-title').typeOnScroll('ABOUT ME', 170);
+    $('#findMe').typeOnScroll('FIND ME', 0);
 
   })
 }
