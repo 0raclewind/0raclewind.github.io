@@ -71,7 +71,7 @@ color: #fff !important;
 
 /*Main Content div*/
 .content {
-  height: 100vh;
+  min-height: 100vh;
   width: 100%;
   padding: 0;
   margin: 0;
@@ -275,32 +275,32 @@ color: #fff !important;
 }
 
 @media only screen and (min-width: 330px) {
-  @media only screen and (max-height: 640px) {
-    .about-title {
-      padding-bottom: 20%;
-    }
-  }
-
   .home {
     padding-top: 15%;
   }
 
   .about-title {
-    padding-bottom: 30%;
+    padding-bottom: 15%;
   }
 
   .about p {
     padding: 3%;
+  }
+
+  @media only screen and (min-height: 720px) {
+    .about-title {
+      padding-bottom: 30%;
+    }
+
+    .about p {
+      font-size: 24px;
+    }
   }
 }
 
 @media only screen and (min-width: 768px) {
   .navbar-nav a {
     font-weight: 400;
-  }
-
-  .content {
-    height: 100%;
   }
 
   .home {
@@ -324,7 +324,7 @@ color: #fff !important;
   }
 
   .about-title {
-    padding-bottom: 25%;
+    padding-bottom: 20%;
   }
 
   .about p {
@@ -376,6 +376,20 @@ color: #fff !important;
 
   .project img {
     width
+  }
+
+  @media only screen and (min-height: 1200px) {
+    .home h1:first-child {
+      margin-top: 50%;
+    }
+
+    .about-title {
+      padding-bottom: 25%;
+    }
+
+    .about p {
+      font-size: 40px;
+    }
   }
 }
 
@@ -521,25 +535,21 @@ color: #fff !important;
   }
 }
 
-/*Big screen tablet query*/
-@media only screen and (min-height: 1200px) and (min-width: 900px) {
-  .about-title {
-    padding-bottom: 30%;
-  }
-
-  .about p {
-    font-size: 40px;
-  }
-}
-
 /*Large Desktop query*/
-@media only screen and (min-height: 900px) and (min-width: 1100px) {
-  .home {
-    padding: 10% 20% 0 20%;
+@media only screen and (min-height: 900px) {
+  @media only screen and (min-width: 1100px) {
+    .home {
+      padding: 10% 20% 0 20%;
+    }
   }
-}
-@media only screen and (min-height: 900px) and (min-width: 1600px) {
-  .home {
-    padding: 10% 30% 0 30%;
+  @media only screen and (min-width: 1400px) {
+    .home {
+      padding: 10% 25% 0 25%;
+    }
+  }
+  @media only screen and (min-width: 1700px) {
+    .home {
+      padding: 10% 30% 0 30%;
+    }
   }
 }
