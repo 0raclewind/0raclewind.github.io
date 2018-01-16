@@ -79,7 +79,7 @@ color: #fff !important;
 
 /*Home items*/
 .home {
-  background: url(../img/glasses.jpeg) no-repeat center center fixed;
+  background: url(../img/glasses.jpeg) no-repeat center center scroll;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -91,7 +91,7 @@ color: #fff !important;
 }
 
 .home h1 {
-  text-shadow: 2px 2px #333;
+  text-shadow: 0px 0px 20px #000;
   text-align: center;
   color: white;
   font-size: 2.5em;
@@ -178,7 +178,7 @@ color: #fff !important;
   background: linear-gradient(
       rgba(0, 0, 0, 0.6),
       rgba(0, 0, 0, 0.6)
-    ),url(../img/coffee.jpeg) no-repeat center center fixed;
+    ),url(../img/coffee.jpeg) no-repeat center center scroll;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -261,11 +261,6 @@ color: #fff !important;
   margin-top: 20px;
   color: #fff;
   text-align: center;
-}
-
-/*padding for typeIt items*/
-#projectsName, .about-title, #findMe {
-  padding-left: 15px;
 }
 
 /*iPhone 4/5 specific*/
@@ -557,4 +552,9 @@ color: #fff !important;
       padding: 10% 30% 0 30%;
     }
   }
+}
+
+/*padding for typeIt items*/
+#projectsName, .about-title, #findMe {
+  padding-left: 1em;
 }

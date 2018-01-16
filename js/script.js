@@ -1,7 +1,7 @@
 $(document).ready(function() {
   $("body").on('click','#mainNavBar', function(){ $(this).collapse("hide") });
   setBindings();
-  parallax();
+  // parallax();
   objectAppear();
   typing();
 });
@@ -18,17 +18,17 @@ function setBindings() {
 }
 
 // Parallax
-function parallax() {
-  var screenWidth = $(document).width() + 15;
-
-  if (screenWidth > 480) {
-    $(window).scroll(function() {
-      var wScroll = $(window).scrollTop();
-
-      $(".parallax-bg").css("background-position", "center -" + (wScroll / 3) + "px")
-    })
-  }
-}
+// function parallax() {
+//   var screenWidth = $(document).width() + 15;
+//
+//   if (screenWidth > 480) {
+//     $(window).scroll(function() {
+//       var wScroll = $(window).scrollTop();
+//
+//       $(".parallax-bg").css("background-position", "center " + (wScroll / 3) + "px")
+//     })
+//   }
+// }
 
 
 //Animate content when scrolling
@@ -70,6 +70,21 @@ function objectAppear() {
     });
   }
 
+  jQuery.fn.fadeInOnScroll = function(scrollOffset, opacity) {
+    return this.each(function() {
+      var itemOffset = $(this).offset().top + scrollOffset;
+      if (!$(this).hasClass('hiding')) {
+        $(this).css({'opacity': 0}).addClass('hiding');
+      }
+      if (!$(this).hasClass('animation-complete')) {
+        if (windowScrollPosBottom > itemOffset) {
+          $(this).animate({'opacity': opacity}, 2000);
+          $(this).addClass('animation-complete');
+        }
+      }
+    });
+  }
+
   $('.project').revealOnScroll();
 
   $(window).on('scroll', function() {
@@ -77,9 +92,11 @@ function objectAppear() {
     scrollFromTop = $(window).scrollTop();
     windowScrollPosBottom = scrollFromTop + windowHeight;
     $('.project').revealOnScroll();
-    $('#projectsName').typeOnScroll('PORTFOLIO', 170);
-    $('.about-title').typeOnScroll('ABOUT ME', 170);
+    $('#projectsName').typeOnScroll('PROJECTS', 170);
+    $('.about-title').typeOnScroll('ABOUT ME', 100);
     $('#findMe').typeOnScroll('FIND ME', 0);
+    $('.about p').fadeInOnScroll(100, 1);
+    $('.find>a>img').fadeInOnScroll(0, .6);
 
   })
 }
