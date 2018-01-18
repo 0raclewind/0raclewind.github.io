@@ -85,7 +85,8 @@ color: #fff !important;
   -o-background-size: cover;
   background-size: cover;
   background-position: center 0px;
-  min-height: 100vh;
+  height: 100vh;
+  min-height: 100%;
   margin: 0;
   padding: 10%;
 }
@@ -184,7 +185,8 @@ color: #fff !important;
   -o-background-size: cover;
   background-size: cover;
   background-position: right;
-  min-height: 100vh;
+  height: 100vh;
+  min-height: 100%;
   margin: 0;
   position: relative;
 }
@@ -230,10 +232,12 @@ color: #fff !important;
   font-weight: 800;
 }
 
-.find img {
-  width: 70px;
-  padding-bottom: 5%;
-  opacity: .6;
+.find i {
+  color: #fff;
+  font-size: 50px;
+  margin: 1% 3% 20px 3%;
+  /*padding: 1% 3% 5% 3%;*/
+  opacity: .5;
 }
 
 .footer .row, .footer p, .footer {
@@ -298,6 +302,12 @@ color: #fff !important;
   }
 }
 
+@media only screen and (min-width: 480px) {
+  .find i {
+    font-size: 70px;
+  }
+}
+
 @media only screen and (min-width: 768px) {
   .navbar-nav a {
     font-weight: 400;
@@ -339,10 +349,10 @@ color: #fff !important;
     font-size: 20px;
   }
 
-  .find img {
-    width: 140px;
+  .find i {
+    font-size: 80px;
+    margin: 2% 2% 50px 2%;
   }
-
 }
 
 @media only screen and (min-width: 992px) {
@@ -376,6 +386,10 @@ color: #fff !important;
 
   .project img {
     width
+  }
+
+  .find i {
+    font-size: 90px;
   }
 
   @media only screen and (min-height: 1200px) {
@@ -473,12 +487,9 @@ color: #fff !important;
     font-size: 16px;
   }
 
-  .find {
-    padding: 0;
-  }
-
-  .find img {
-    width: 50px;
+  .find i {
+    margin: 1% 2% 12px 2%;
+    font-size: 40px;
   }
 
   @media only screen and (min-height: 330px) {
@@ -486,8 +497,8 @@ color: #fff !important;
       margin-top: 5%;
     }
 
-    .find img {
-      width: 70px;
+    .find i {
+      font-size: 40px;
     }
   }
 
@@ -502,6 +513,10 @@ color: #fff !important;
 
     .about p {
       font-size: 26px;
+    }
+
+    .find i {
+      margin: 2% 2% 25px 2%;
     }
   }
 
@@ -522,6 +537,10 @@ color: #fff !important;
       font-size: 30px;
       padding-top: 2%;
     }
+
+    .find i {
+      font-size: 60px;
+    }
   }
 
   @media only screen and (min-height: 900px) {
@@ -531,6 +550,10 @@ color: #fff !important;
 
     .about p {
       font-size: 34px;
+    }
+
+    .find i {
+      font-size: 80px;
     }
   }
 }

@@ -96,7 +96,7 @@ function objectAppear() {
     $('.about-title').typeOnScroll('ABOUT ME', 100);
     $('#findMe').typeOnScroll('FIND ME', 0);
     $('.about p').fadeInOnScroll(100, 1);
-    $('.find>a>img').fadeInOnScroll(0, .6);
+    $('.find>a>i').fadeInOnScroll(0, .5);
 
   })
 }
