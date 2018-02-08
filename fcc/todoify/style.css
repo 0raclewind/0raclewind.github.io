@@ -1,0 +1,158 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  height: 100%;
+  min-height: 100vh;
+  background: linear-gradient(to bottom left, #0a65b8, #1c9156)
+}
+
+header {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  width: 400px;
+  color: #eee;
+  text-shadow: 2px 2px 5px #222;
+  border-bottom: 3px solid #44c18f;
+}
+
+header h1 {
+  margin-top: 50px;
+  font-size: 60px;
+}
+
+header h3 {
+  padding-bottom: 30px;
+  font-size: 22px;
+}
+
+#inputError {
+  height: 20px;
+  position: relative;
+  border-radius: 3px;
+  color: rgb(109, 217, 194);
+  font-weight: bold;
+  text-shadow: 2px 2px 5px #000;
+  margin-bottom: 5px;
+}
+
+.inputField {
+  margin-top: 5px;
+  text-align: center;
+}
+
+.inputField input {
+  color: #333;
+  font-size: 16px;
+  width: 300px;
+  border: none;
+  padding: 5px;
+  border-radius: 5px;
+  background: rgba(255, 255, 255, 0.9);
+}
+
+.inputField .btn:hover {
+  color: rgb(196, 255, 222);
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.inputField .btn:focus {
+  color: rgb(144, 222, 178);
+}
+
+.inputField .btn {
+  color: #eee;
+  margin-top: 0;
+  font-size: 16px;
+  font-weight: 900;
+  text-shadow: 2px 2px 2px #222;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.mainList {
+  min-height: 100px;
+  margin: 30px 20% 20px 20%;
+  padding: 10px;
+  background: rgba(0, 59, 25, 0.5);
+  border-radius: 1em;
+}
+
+.mainList h3 {
+  margin-top: 0;
+  text-align: center;
+  font-weight: 100;
+  color: #ccc;
+  letter-spacing: 5px;
+}
+
+ul {
+  padding-left: 0;
+}
+
+ul li {
+  list-style: none;
+  padding: 15px;
+  margin: 10px;
+  background: rgba(69, 171, 147, 0.5);
+  border-radius: 10px;
+  color: #eee;
+  text-shadow: 2px 2px 4px #000;
+  font-size: 16px;
+}
+
+ul li:hover {
+  background: rgba(69, 171, 147, 0.8);
+}
+
+.glyphicon-remove {
+  float: right;
+  font-size: 22px;
+  cursor: pointer;
+}
+
+.glyphicon-remove:hover {
+  color: #89f1cf;
+}
+
+@media screen and (max-width: 1200px) {
+  .mainList {
+    margin: 20px 15% 20px 15%;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .mainList {
+    margin: 20px 10% 20px 10%;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .mainList {
+    margin: 20px 5% 20px 5%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  header {
+    width: 70%;
+  }
+
+  header h1 {
+    margin-top: 30px;
+    font-size: 50px;
+  }
+
+  header h3 {
+    font-size: 18px;
+    padding-bottom: 30px;
+  }
+
+  .inputField input {
+    width: 70%;
+  }
+
+  .mainList {
+    margin: 20px 1% 20px 1%;
+  }
+}

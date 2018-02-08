@@ -16,8 +16,7 @@ function getResult() {
   if (input.length > 0) {
     var result = eval(input.join(""));
     input = [];
-    input.push(result);
-    update();
+    document.getElementById('output').innerHTML = result;
   }
 };
 
