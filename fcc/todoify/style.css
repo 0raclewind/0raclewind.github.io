@@ -86,6 +86,13 @@ header h3 {
   letter-spacing: 5px;
 }
 
+#reset {
+  position: static;
+  float: right;
+  cursor: pointer;
+  padding: 3px 0 3px 3px;
+}
+
 ul {
   padding-left: 0;
 }
@@ -105,20 +112,28 @@ ul li:hover {
   background: rgba(69, 171, 147, 0.8);
 }
 
-.glyphicon-remove {
+.glyphicon-trash {
+  padding: 15px;
+  margin: -15px;
   float: right;
   font-size: 22px;
   cursor: pointer;
 }
 
-.glyphicon-remove:hover {
+.glyphicon-trash:hover, #reset:hover {
   color: #89f1cf;
 }
 
 .glyphicon-unchecked, .glyphicon-check {
-  padding-right: 10px;
+  margin: -15px 0 -15px -15px;
+  padding: 15px;
+  position: fixed;
   font-size: 22px;
   cursor: pointer;
+}
+
+.glyphicon-check {
+  color: rgb(0, 140, 60);
 }
 
 #timeStamp {
