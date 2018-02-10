@@ -37,7 +37,6 @@ function removeItem(event) {
   setTimeout(function() {
     elem.parentNode.removeChild(elem);
   }, 400);
-
   if (document.querySelector('.mainList ul').children.length === 1) {
     $('#noItems').slideDown(400);
   }

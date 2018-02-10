@@ -4,7 +4,7 @@ body {
   font-family: Arial, Helvetica, sans-serif;
   height: 100%;
   min-height: 100vh;
-  background: linear-gradient(to bottom left, #0a65b8, #1c9156)
+  background: linear-gradient(to bottom left, #0a65b8, #48a820)
 }
 
 header {
@@ -14,7 +14,7 @@ header {
   width: 400px;
   color: #eee;
   text-shadow: 2px 2px 5px #222;
-  border-bottom: 3px solid #44c18f;
+  /*border-bottom: 3px solid #44c18f;*/
 }
 
 header h1 {
@@ -23,7 +23,7 @@ header h1 {
 }
 
 header h3 {
-  padding-bottom: 30px;
+  /*padding-bottom: 30px;*/
   font-size: 22px;
 }
 
@@ -43,35 +43,35 @@ header h3 {
 }
 
 .inputField input {
-  color: #333;
-  font-size: 16px;
+  color: #fff;
+  text-shadow: 2px 2px 3px #000;
+  font-size: 20px;
   width: 300px;
   border: none;
-  padding: 5px;
-  border-radius: 5px;
-  background: rgba(255, 255, 255, 0.9);
+  /*padding: 5px;*/
+  /*border-radius: 5px;*/
+  background: rgba(255, 255, 255, 0);
+  border-bottom: 2px solid #44c18f;
 }
 
-.inputField .btn:hover {
+.inputField .glyphicon-plus:hover {
   color: rgb(196, 255, 222);
-  background: rgba(0, 0, 0, 0.5);
 }
 
-.inputField .btn:focus {
+.inputField .glyphicon-plus:focus {
   color: rgb(144, 222, 178);
 }
 
-.inputField .btn {
+.inputField .glyphicon-plus {
   color: #eee;
+  padding: 5px;
   margin-top: 0;
-  font-size: 16px;
-  font-weight: 900;
+  font-size: 26px;
   text-shadow: 2px 2px 2px #222;
-  background-color: rgba(0, 0, 0, 0.3);
 }
 
 .mainList {
-  /*min-height: 100px;*/
+  min-height: 130px;
   margin: 30px 20% 20px 20%;
   padding: 10px;
   background: rgba(0, 59, 25, 0.5);
@@ -79,6 +79,7 @@ header h3 {
 }
 
 .mainList h3 {
+
   margin-top: 0;
   text-align: center;
   font-weight: 100;
@@ -90,8 +91,8 @@ header h3 {
 #noItems {
   text-align: center;
   font-size: 30px;
-  /*margin-right: 35px;*/
-  color: rgba(255, 255, 255, 0.3);
+  margin-top: 25px;
+  color: rgba(255, 255, 255, 0.2);
 }
 
 #reset {
@@ -181,7 +182,7 @@ ul li:hover {
 
   header h3 {
     font-size: 18px;
-    padding-bottom: 30px;
+    /*padding-bottom: 30px;*/
   }
 
   .inputField input {
