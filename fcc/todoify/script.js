@@ -51,13 +51,13 @@ function handleCheck(event) {
     event.className = "glyphicon glyphicon-unchecked";
     event.nextSibling.style.textDecoration = 'none';
     eventStyle.color = '#eee';
-    eventStyle.backgroundColor = 'rgba(69, 171, 147, 0.5)';
+    eventStyle.backgroundColor = 'rgba(69, 171, 147, 0.3)';
     eventStyle.fontStyle = 'normal';
   } else {
     event.className = "glyphicon glyphicon-check";
     event.nextSibling.style.textDecoration = 'line-through';
     eventStyle.color = '#aaa';
-    eventStyle.backgroundColor = 'rgba(36, 110, 92, 0.7)';
+    eventStyle.backgroundColor = 'rgba(36, 110, 92, 0.5)';
     eventStyle.fontStyle = 'italic';
   }
 }
