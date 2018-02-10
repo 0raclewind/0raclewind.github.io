@@ -62,6 +62,7 @@ function handleCheck(event) {
   }
 }
 
+// If value is single number add 0 to front
 function timeCheck(time) {
   time = time.toString()
   if (time.length === 1) {

@@ -53,8 +53,6 @@ header h3 {
   padding-top: 0;
   background: rgba(0, 0, 0, 0);
   border-bottom: 2px solid #44c18f;
-  /*border-radius: 5px;*/
-  /*border: 2px solid #44c18f;*/
 }
 
 .inputField .glyphicon-plus:hover {
