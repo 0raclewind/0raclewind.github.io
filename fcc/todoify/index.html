@@ -4,7 +4,9 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="./style.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">    <title>Learning Javascript</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="shortcut icon" href="./favicon.ico">
+    <title>To-do'ify</title>
   </head>
   <body>
     <header>
@@ -24,10 +26,13 @@
             Created: Feb 9, 19:10
           </div>
           <span class="glyphicon glyphicon-unchecked" onClick=handleCheck(this)></span>
-          THIS IS TESTING SPAN, SO FUCK OFF!
-          <span class="glyphicon glyphicon-remove" onClick=removeItem() ></span>
+          <span>THIS IS TESTING SPAN, SO FUCK OFF!</span>
+          <span class="glyphicon glyphicon-trash" onClick=removeItem() ></span>
         </li> -->
       </ul>
+      <div id=noItems>
+        No items to display...
+      </div>
     </div>
     <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
     <script type="text/javascript" src="./script.js"></script>

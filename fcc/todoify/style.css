@@ -71,7 +71,7 @@ header h3 {
 }
 
 .mainList {
-  min-height: 100px;
+  /*min-height: 100px;*/
   margin: 30px 20% 20px 20%;
   padding: 10px;
   background: rgba(0, 59, 25, 0.5);
@@ -84,6 +84,14 @@ header h3 {
   font-weight: 100;
   color: #ccc;
   letter-spacing: 5px;
+
+}
+
+#noItems {
+  text-align: center;
+  font-size: 30px;
+  /*margin-right: 35px;*/
+  color: rgba(255, 255, 255, 0.3);
 }
 
 #reset {
