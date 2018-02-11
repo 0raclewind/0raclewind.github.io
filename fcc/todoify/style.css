@@ -44,15 +44,23 @@ header h3 {
 }
 
 .inputField input {
-  color: #fff;
+  color: #eee;
   text-shadow: 2px 2px 3px #000;
   font-size: 20px;
   width: 300px;
   border: none;
-  padding: 5px;
-  padding-top: 0;
+  padding: 0 5px 5px 15px;
   background: rgba(0, 0, 0, 0);
   border-bottom: 2px solid #44c18f;
+}
+
+.inputField input:focus {
+  outline: none;
+}
+
+.inputField input::placeholder {
+  color: rgba(255, 255, 255, 0.6);
+  text-shadow: none;
 }
 
 .inputField .glyphicon-plus:hover {

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="shortcut icon" href="./favicon.ico">
+    <link href="https://fonts.googleapis.com/css?family=Bree+Serif|Dancing+Script|Kavivanar|Lobster" rel="stylesheet">
+    <title>FreeCodeCamp Pomodoro clock</title>
+  </head>
+  <body>
+    <header>
+      <div id=fcc>freeCodeCamp</div>
+      <div id=title>Pomodoro clock</div>
+      <div id=note>designed to make your life organised</div>
+    </header>
+    <div class="content">
+      <div class="controls">
+        <div class="break">
+          <div class="controlTitles">Break time</div>
+          <div>
+            <span class="glyphicon glyphicon-minus-sign" onclick=reduceTime(this)></span>
+            <span class=controlTime></span>
+            <span class="glyphicon glyphicon-plus-sign" onClick=addTime(this)></span>
+          </div>
+        </div>
+        <div class="workTime">
+          <div class="controlTitles">Work time</div>
+          <div>
+            <span class="glyphicon glyphicon-minus-sign" onclick=reduceTime(this)></span>
+            <span class=controlTime></span>
+            <span class="glyphicon glyphicon-plus-sign" onClick=addTime(this)></span>
+          </div>
+        </div>
+      </div>
+      <div class="timer">
+        <div id="startStopBtn" class="glyphicon glyphicon-play" onClick=start(this)></div>
+        <div class="time">
+          <span id=mins></span>:<span id=secs>00</span>
+        </div>
+        <div class="reset glyphicon glyphicon-repeat" onClick=reset()></div>
+      </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <script type="text/javascript" src="./script.js"></script>
+  </body>
+</html>
