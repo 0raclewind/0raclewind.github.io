@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <link href="https://fonts.googleapis.com/css?family=Indie+Flower|Josefin+Sans|Lobster" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="shortcut icon" href="favicon.ico">
+    <title>Redundify</title>
+  </head>
+  <body>
+    <div class="header">
+      <h1>Redundify</h1>
+      <h3>calculate your redundancy easily</h3>
+    </div>
+    <div class="inputs">
+      <h4>Time of service</h4>
+      <input id=years class="time input" type="number" placeholder="Years" autofocus>
+      <input id=months class="time input" type="number" placeholder="Months">
+      <div class="wages">
+        <h4>Weekly wages</h4>
+        <input id="wages" class="input" type="number" placeholder="Wages">
+        <span class="glyphicon glyphicon-euro"></span>
+      </div>
+      <div class="btn btn-default" id=calcBtn onClick=calculate()>CALCULATE</div>
+      <div class="output">
+        <h3></h3>
+        <div class="redund">
+
+        </div>
+      </div>
+    </div>
+    <script type="text/javascript" src="./script.js"></script>
+  </body>
+</html>
