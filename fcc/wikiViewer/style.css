@@ -1,0 +1,181 @@
+/*
+Google fonts
+font-family: 'Noto Serif', serif;
+font-family: 'Lato', sans-serif;
+*/
+
+* {
+  padding: 0;
+  margin: 0;
+  text-align: center;
+  font-family: 'Lato', sans-serif;
+}
+
+img {
+  position: absolute;
+
+}
+
+input {
+  height: 35px;
+  text-align: left;
+  font-size: 66px;
+  padding-left: 10px;
+}
+
+hr {
+  margin-left: 40px;
+  margin-right: 40px;
+  background-color: #000;
+}
+
+.header {
+  background: url('http://blog.ketchum.com/wp-content/uploads/2013/09/wikipedia-1024x1024.png');
+  background-position: center top;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-blend-mode: screen;
+  background-color: #aaa);
+  height: 150px;
+  border-bottom: 3px solid rgb(80, 80, 80);
+}
+
+.titles {
+  background-color: rgba(0,0,0,0.3);
+  height:  100%;
+  padding-top: 15px;
+  color: #fff;
+  text-shadow: 2px 2px 5px #000;
+}
+
+.titles h1 {
+  font-size: 30px;
+  font-family: 'Noto Serif', serif;
+  letter-spacing: 7px;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+#bigLetter {
+  font-family: 'Noto Serif', serif;
+  font-size: 60px;
+}
+
+.titles h3 {
+  font-family: 'Lato', sans-serif;
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+.titles p, .titles h3 {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.content {
+  padding-top: 20px;
+}
+
+#random {
+  width: 250px;
+}
+
+.content>p {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 0;
+}
+
+ul li {
+  margin-top: 20px;
+  text-align: left;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+ul li a {
+  font-size: 22px;
+  font-weight: bold;
+}
+
+ul li p {
+  text-align: justify;
+}
+
+@media screen and (min-width: 360px) {
+  .header {
+    height: 200px;
+  }
+
+  .titles {
+    padding-top: 25px;
+  }
+
+  .titles h1 {
+    margin-top: 10px;
+    font-size: 40px;
+  }
+
+  #bigLetter {
+    font-size: 76px;
+  }
+
+  .titles h3, .titles p {
+    font-size: 22px;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .header {
+    height: 250px;
+  }
+
+  .titles {
+    padding-top: 35px;
+  }
+
+  .titles h1 {
+    font-size: 50px;
+  }
+
+  #bigLetter {
+    font-size: 96px;
+  }
+
+  .titles h3, .titles p {
+    font-size: 26px;
+  }
+
+  ul li {
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+}
+
+@media screen and (min-width: 640px) {
+  ul li {
+    padding-left: 15%;
+    padding-right: 15%;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  ul li {
+    padding-left: 25%;
+    padding-right: 25%;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  ul li {
+    padding-left: 30%;
+    padding-right: 30%;
+  }
+}
+
+@media screen and (min-width: 1600px) {
+  ul li {
+    padding-left: 35%;
+    padding-right: 35%;
+  }
+}
