@@ -103,6 +103,10 @@ header {
   margin-right: -30px;
 }
 
+.glyphicon:hover {
+  color: rgb(255, 107, 0);
+}
+
 .time, .time span {
   font-size:  48px;
   font-family: 'Bree Serif', serif;
