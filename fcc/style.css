@@ -34,19 +34,24 @@ h1, h4 {
 ul {
   width: 300px;
   margin: 0 auto 0 auto;
-  border: 2px solid #ccc;
+  padding: 5px 0 5px 0;
+  /*border: 2px solid #ccc;*/
+  border-left: 2px solid #ccc;
+  border-right: 2px solid #ccc;
   border-radius: 10px;
   background-color: rgba(0, 0, 0, 0.2);
 }
 
 ul li {
   font-family: 'Philosopher', cursive;
-  margin: 5px;
+  margin: 2px 5px 2px 5px;
   list-style: none;
   font-size: 20px;
   padding-top: 10px;
   padding-bottom: 10px;
-  border: 2px solid #ccc;
+  /*border: 2px solid #ccc;*/
+  border-left: 2px solid #ccc;
+  border-right: 2px solid #ccc;
   border-radius: 5px;
   background-color: rgba(30, 30, 30, 0.4);
 }
@@ -55,6 +60,7 @@ ul li:hover {
   border-color: #fff;
   color: #fff;
   background-color: rgb(36, 91, 154);
+  font-weight: 600;
 }
 
 ul a {
