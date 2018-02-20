@@ -81,6 +81,7 @@ function search() {
   });
 }
 
+// Creates list item in list
 function createItem(name, logo, url, stream) {
   const ul = document.querySelector('ul');
   // Create elements
@@ -101,6 +102,7 @@ function createItem(name, logo, url, stream) {
   img.setAttribute('src', logo);
   a3.setAttribute('target', 'blank');
   a3.setAttribute('href', url);
+  span2.setAttribute('class', "glyphicon glyphicon-facetime-video");
 
   a.append(img);
   a2.append(name);
@@ -110,10 +112,8 @@ function createItem(name, logo, url, stream) {
     span1.style = "color: green";
     span2.style = "color: green";
     span1.append(stream.name);
-    span2.setAttribute('class', "glyphicon glyphicon-facetime-video");
   } else {
     span1.append("Offline");
-    span2.setAttribute('class', "glyphicon glyphicon-facetime-video");
   }
 
   a3.append(span2);
