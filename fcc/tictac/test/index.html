@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <script src="../../../resources/jquery-3.2.1.min.js"></script>
+    <title>test</title>
+  </head>
+  <body>
+    <h1>hello world</h1>
+    <button type="button" name="button">Check</button>
+      <p>hi</p>
+      <p>ht</p>
+      <p>hello</p>
+      <p class=”duplicate”>nothin</p>
+      <p class=”duplicate”>bele</p>
+      <p class=”duplicate”>you</p>
+      <p>hello</p>
+    <script>
+      $(document).ready(function() {
+        var par = $('p');
+
+        par = $.makeArray(par);
+        var dups = $.makeArray($('.duplicate'));
+        par.concat(dups);
+      });
+    </script>
+  </body>
+</html>

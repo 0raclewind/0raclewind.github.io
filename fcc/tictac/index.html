@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <!-- <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script> -->
+    <link rel="stylesheet" href="../../resources/font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <title>Tic-Tac-Toe</title>
+  </head>
+  <body>
+    <div class="settings">
+      <div class="sectionTitle">Change name</div>
+      <div class="nameTitle">PLAYER 1 Name</div>
+      <input id=p1 value="PLAYER 1" maxlength="10">
+      <div id=p2nameTitle class="nameTitle">PLAYER 2 Name</div>
+      <input id=p2 value="Jennie" maxlength="10" disabled=true class="p2nameDisabled">
+      <div class="sectionMode">Select mode</div>
+      <button id="singlePlayer" class="mode activeMode">Single player</button>
+      <button id="multiPlayer" class="mode">Multi-player</button>
+      <button id=cancel type="button" name="button">CLOSE</button>
+      <button id=save type="button" name="button">SAVE</button>
+    </div>
+    <header>
+      <span class="glyphicon glyphicon-cog settingsCog"></span>
+      <div class="fcc">freeCodeCamp</div>
+      <div class="title">Tic-Tac-Toe</div>
+    </header>
+    <div class="choiceMsg">
+      <div class="title">Choose Player 1 avatar</div>
+      <i class="fa fa-times fa-5x"></i>
+      <i class="fa fa-circle-o fa-5x"></i>
+    </div>
+    <div class="winnerMsg">
+      <div class="winner"><span></span><p></p></div>
+      <div class="repeat">Play again <span class="glyphicon glyphicon-repeat"></span></div>
+    </div>
+    <div class="playground">
+      <div class="players">
+        <div class="player1 playerActive"></div>
+        <div class="player2"></div>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="field field1"></div>
+          <div class="field field2"></div>
+          <div class="field field3"></div>
+        </div>
+        <div class="row">
+          <div class="field field4"></div>
+          <div class="field field5"></div>
+          <div class="field field6"></div>
+        </div>
+        <div class="row">
+          <div class="field field7"></div>
+          <div class="field field8"></div>
+          <div class="field field9"></div>
+        </div>
+      </div>
+    </div>
+    <script type="text/javascript" src="../../resources/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="./script.js"></script>
+  </body>
+</html>
