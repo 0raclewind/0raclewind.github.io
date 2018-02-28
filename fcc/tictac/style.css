@@ -3,13 +3,17 @@ body {
   position: relative;
 }
 
+* {
+  font-family: 'Cabin', sans-serif;
+}
+
 .settingsCog {
   font-size: 30px;
   color: #ccc;
   position: relative;
-  margin: 20px 40px auto auto;
+  margin: 10px 10px auto auto;
   padding: 5px;
-  z-index: 3;
+  z-index: 2;
 }
 
 .settingsCog:hover {
@@ -19,8 +23,8 @@ body {
 
 .settings {
   position: absolute;
-  top: 40px;
-  right: 60px;
+  top: 10px;
+  right: 10px;
   width: 300px;
   background: rgba(15, 57, 64, 0.9);
   border-radius: 20px;
@@ -115,7 +119,7 @@ header {
 }
 
 .fcc {
-  margin-top: -20px;
+  margin-top: -40px;
   text-align: center;
   color: rgb(209, 158, 25);
   text-shadow: 4px 4px 20px #000;
@@ -123,11 +127,11 @@ header {
 }
 
 header .title {
+  font-family: 'Coiny', cursive;
   text-align: center;
   color: rgb(167, 87, 22);
-  text-shadow: 4px 4px 30px #000;
+  text-shadow: 4px 4px 30px #222;
   font-size: 50px;
-  margin-bottom: 30px;
 }
 
 
