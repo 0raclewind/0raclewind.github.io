@@ -297,3 +297,28 @@ header .title {
 .field9 {
   border-bottom-right-radius: 40px;
 }
+
+
+@media screen and (min-width: 640px) {
+  .settingsCog {
+    margin-right: 25%;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .settingsCog {
+    margin-right: 32%;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .settingsCog {
+    margin-right: 37%;
+  }
+}
+
+@media screen and (min-width: 1600px) {
+  .settingsCog {
+    margin-right: 40%;
+  }
+}
