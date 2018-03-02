@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <link href="https://fonts.googleapis.com/css?family=Allerta+Stencil|Fontdiner+Swanky|Press+Start+2P" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./style.css">
+    <title>Simon game</title>
+  </head>
+  <body>
+    <div class="messagesCheckbox">
+      <span class="glyphicon glyphicon-check"></span>
+      Ingame messages
+    </div>
+    <div class="container">
+      <div class="winnerMsg">
+        <span class="glyphicon glyphicon-remove"></span>
+        <h4>Congratulations you have won the Simon game.</h4>
+        <h5>Simon have nothing else to say to you.</h5>
+        <span class="glyphicon glyphicon-star"></span>
+        <span class="glyphicon glyphicon-star"></span>
+        <span class="glyphicon glyphicon-star"></span>
+        <span class="glyphicon extra"></span>
+        <span class="glyphicon extra"></span>
+        <p>To collect all stars finish game in strict mode</p>
+      </div>
+      <div class="strictMessage">STOP the game to enable mode switch</div>
+      <div class="message"></div>
+      <div class="controls">
+        <img src="./freecodecamp_logo.svg">
+        <div class="title">SIMON</div>
+        <div class="display">LEVEL
+          <div class="digits">--</div>
+        </div>
+        <div class="startBtn">START</div>
+        <div class="strictBtn">Strict
+          <div class="strictSlider">
+            <div class="switchGreenBg"></div>
+            <div class="switch"></div>
+          </div>
+        </div>
+        <div class="soundBtn">
+          <span class="glyphicon glyphicon-volume-up"></span>
+          <div class="soundSlider">
+            <div class="switchGreenBg"></div>
+            <div class="switch"></div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xs-6 green" id="0"></div>
+        <audio src="https://s3.amazonaws.com/freecodecamp/simonSound1.mp3" id="audio0"></audio>
+        <div class="col-xs-6 red" id="1"></div>
+        <audio src="https://s3.amazonaws.com/freecodecamp/simonSound2.mp3" id="audio1"></audio>
+      </div>
+      <div class="row">
+        <div class="col-xs-6 yellow" id="2"></div>
+        <audio src="https://s3.amazonaws.com/freecodecamp/simonSound3.mp3" id="audio2"></audio>
+        <div class="col-xs-6 blue" id="3"></div>
+        <audio src="https://s3.amazonaws.com/freecodecamp/simonSound4.mp3" id="audio3"></audio>
+      </div>
+    </div>
+    <script type="text/javascript" src="../../resources/jquery-3.2.1.min.js"></script>
+    <script src="../../resources/jquery-ui/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="./script.js"></script>
+  </body>
+</html>

@@ -22,6 +22,8 @@ body {
 }
 
 .settings {
+  margin-left: auto;
+  margin-right: auto;
   position: absolute;
   top: 10px;
   right: 10px;
@@ -300,24 +302,40 @@ header .title {
 
 
 @media screen and (min-width: 640px) {
+  .settings {
+    right: 25%;
+  }
+
   .settingsCog {
     margin-right: 25%;
   }
 }
 
 @media screen and (min-width: 900px) {
+  .settings {
+    right: 32%;
+  }
+
   .settingsCog {
     margin-right: 32%;
   }
 }
 
 @media screen and (min-width: 1200px) {
+  .settings {
+    right: 37%;
+  }
+
   .settingsCog {
     margin-right: 37%;
   }
 }
 
 @media screen and (min-width: 1600px) {
+  .settings {
+    right: 40%;
+  }
+
   .settingsCog {
     margin-right: 40%;
   }
