@@ -212,20 +212,15 @@ body {
   color: #ccc;
 }
 
-.messagesCheckbox, .warmupCheckbox {
+.messagesCheckbox {
+  font-size: 12px;
   color: #aaa;
-  left: 20px;
 }
 
 .messagesCheckbox {
-  top: 20px;
+  top: -40px;
+  left: 0px;
 }
-
-.warmupCheckbox {
-  top: 40px;
-
-}
-
 
 .messagesCheckbox:hover {
   cursor: pointer;
@@ -284,8 +279,8 @@ body {
 }
 
 .infoBtn {
-  top: 20px;
-  right: 20px;
+  top: -40px;
+  right: 0px;
   font-size: 30px;
   color: #aaa;
 }
@@ -345,7 +340,7 @@ body {
 
 @media screen and (min-width: 640px) {
   .container {
-    margin-top: 100px;
+    margin-top: 160px;
     transform: scale(1.5);
   }
 }
