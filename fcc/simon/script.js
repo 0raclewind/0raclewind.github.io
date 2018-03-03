@@ -4,8 +4,14 @@ $(document).ready(function() {
   $('.startBtn').click(startGame);
   $('.col-xs-6').click(playerClick);
   $('.messagesCheckbox').click(toggleMessages);
-  $('.glyphicon-remove').click(() => {
+  $('.winnerMsg .glyphicon-remove').click(() => {
     $('.winnerMsg').fadeOut(200);
+  });
+  $('.infoWindow .glyphicon-remove').click(() => {
+    $('.infoWindow').fadeOut(200);
+  });
+  $('.infoBtn').click(() => {
+    $('.infoWindow').fadeIn(200);
   });
 
   let game = {
