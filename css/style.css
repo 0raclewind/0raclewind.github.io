@@ -1,5 +1,3 @@
-@import url(https://fonts.googleapis.com/css?family=Raleway:200,300,400,500,700,800);
-
 body, html {
   padding: 0;
   margin: 0;
@@ -20,17 +18,16 @@ body, html {
   border-radius: 10px;
 }
 
+.valdo {
+  font-weight: bold;
+  font-size: 24px;
+  letter-spacing: 3px;
+}
+
 .theCoder {
   font-family: monospace;
   font-family: 'Press Start 2P', cursive;
   font-size: 12px;
-}
-
-.valdo {
-  font-weight: bold;
-  /*font-family: 'Archivo Black', sans-serif;*/
-  font-size: 28px;
-  letter-spacing: 5px;
 }
 
 .navbar-brand {
@@ -87,33 +84,38 @@ color: #fff !important;
   background-position: center 0px;
   height: 100vh;
   min-height: 100%;
-  margin: 0;
-  padding: 10%;
 }
 
 .home h1 {
-  text-shadow: 0px 0px 20px #000;
+  text-shadow: 0px 0px 5px #000;
   text-align: center;
   color: white;
-  font-size: 2.5em;
-  font-weight: 300;
+  font-size: 2.2em;
+  font-weight: 400;
 }
 
 .home h1:first-child {
   text-align: left;
-  margin-top: 50%;
+  margin-top: 150px;
 }
 
 .home h1:nth-child(2) {
   text-align: right;
 }
 
+.home h1, #typing {
+  width: 300px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 #typing {
+  font-family: 'Inconsolata', cursive;
   font-size: 1.9em;
   background-color: rgba(0, 0, 0, 0.7);
-  margin: 5% 3% 0 3%;
+  margin-top: 10px;
   border-radius: .2em;
-  color: #ddd;
+  color: #aaa;
   padding-left: 4%;
 }
 
@@ -149,6 +151,8 @@ color: #fff !important;
 }
 
 .project {
+  display: none;
+  opacity: 0;
   margin: 10% 2% 3% 2%;
 }
 
@@ -189,31 +193,32 @@ color: #fff !important;
   min-height: 100%;
   margin: 0;
   position: relative;
+  padding-top: 50px;
 }
 
 .contact p {
   width: 100%;
-  font-size: 24px;
   color: #ccc;
-  text-shadow: 1px 1px #000;
+  text-shadow: 1px 1px 2px #000;
 }
 
 /*About section*/
-.about {
-  padding: 0 5% 0 5%;
+.about-title {
+  margin: 20px 0 50px 0 !important;
+  color: #bbb;
 }
 
-.about-title {
-  height: 10%;
-  margin: 50px 0 12%;
-  color: #bbb;
-  padding-bottom: 20%;
+.about {
+  width: 300px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .about p {
   text-align: center;
-  font-size: 20px;
-  height: 50%;
+  padding: 0 20px;
+  font-size: 16px;
+  line-height: 26px;
 }
 
 /*Find me section*/
@@ -267,48 +272,41 @@ color: #fff !important;
   text-align: center;
 }
 
-/*iPhone 4/5 specific*/
-@media only screen and (min-width: 320px) {
-  .home {
-    padding: 5%;
-  }
-
-  .about-title {
-    padding-bottom: 10%;
-  }
+/*padding for typeIt items*/
+#projectsName, .about-title, #findMe {
+  padding-left: 1em;
 }
 
-@media only screen and (min-width: 330px) {
-  .home {
-    padding-top: 15%;
-  }
-
-  .about-title {
-    padding-bottom: 15%;
-  }
-
-  .about p {
-    padding: 3%;
-  }
-
-  @media only screen and (min-height: 720px) {
-    .about-title {
-      padding-bottom: 30%;
-    }
-
-    .about p {
-      font-size: 24px;
-    }
+@media only screen and (min-width: 360px) {
+  .about {
+    width: 350px;
+    margin-top: 70px;
   }
 }
 
 @media only screen and (min-width: 480px) {
+  .about {
+    font-size: 16px;
+    width: 360px;
+  }
+
   .find i {
-    font-size: 70px;
+    font-size: 50px;
+  }
+}
+
+@media screen and (min-width: 640px) {
+  .about {
+    margin-left: 0;
+    font-size: 18px;
   }
 }
 
 @media only screen and (min-width: 768px) {
+  .about {
+    margin-left: 0px;
+  }
+
   .navbar-nav a {
     font-weight: 400;
   }
@@ -326,32 +324,13 @@ color: #fff !important;
   }
 
   .contact h1, .projects>h1 {
-    font-size: 50px;
-  }
-
-  .about {
-    padding: 0 10% 0 10%;
-  }
-
-  .about-title {
-    padding-bottom: 20%;
-  }
-
-  .about p {
     font-size: 30px;
   }
 
-  .footer {
-    height: 40px;
-  }
-
-  .footer p {
+  .about {
+    /*width: 500px;*/
+    margin-top: 120px;
     font-size: 20px;
-  }
-
-  .find i {
-    font-size: 80px;
-    margin: 2% 2% 50px 2%;
   }
 }
 
@@ -392,24 +371,9 @@ color: #fff !important;
     font-size: 90px;
   }
 
-  @media only screen and (min-height: 1200px) {
-    .home h1:first-child {
-      margin-top: 50%;
-    }
-
-    .about-title {
-      padding-bottom: 25%;
-    }
-
-    .about p {
-      font-size: 40px;
-    }
-  }
-}
-
 @media only screen and (min-width: 1200px) {
   .home h1:first-child {
-    margin-top: 35%;
+    margin-top: 150px;
   }
 
   .home h1 {
@@ -453,131 +417,4 @@ color: #fff !important;
   .project p {
     font-size: 40px;
   }
-}
-
-@media only screen and (max-height: 420px) {
-  .home h1 {
-    margin-top: 5%;
-  }
-
-  .contact>h1 {
-    margin-bottom: 5%;
-  }
-}
-
-
-/*Landscape fallback*/
-@media only screen and (orientation: landscape) {
-  .home {
-    padding: 15% 20% 0 20%;
-  }
-
-  .home h1:first-child {
-    margin-top: 10%;
-  }
-
-  .about-title {
-    margin-top: 50px;
-    padding-bottom: 0;
-    margin-bottom: 0;
-  }
-
-  .about p {
-    padding: 0;
-    font-size: 16px;
-  }
-
-  .find i {
-    margin: 1% 2% 12px 2%;
-    font-size: 40px;
-  }
-
-  @media only screen and (min-height: 330px) {
-    .home h1:first-child {
-      margin-top: 5%;
-    }
-
-    .find i {
-      font-size: 40px;
-    }
-  }
-
-  @media only screen and (min-height: 480px) {
-    .home h1:first-child {
-      margin-top: 15%;
-    }
-
-    .about-title {
-      padding-bottom: 10%;
-    }
-
-    .about p {
-      font-size: 26px;
-    }
-
-    .find i {
-      margin: 2% 2% 25px 2%;
-    }
-  }
-
-  @media only screen and (min-height: 768px) {
-    .home {
-      padding: 10%;
-    }
-
-    .home h1:first-child {
-      margin-top: 5%;
-    }
-
-    .about-title {
-      padding-bottom: 10%;
-    }
-
-    .about p {
-      font-size: 30px;
-      padding-top: 2%;
-    }
-
-    .find i {
-      font-size: 60px;
-    }
-  }
-
-  @media only screen and (min-height: 900px) {
-    .home h1:first-child {
-      margin-top: 15%;
-    }
-
-    .about p {
-      font-size: 34px;
-    }
-
-    .find i {
-      font-size: 80px;
-    }
-  }
-}
-
-/*Large Desktop query*/
-@media only screen and (min-height: 900px) {
-  @media only screen and (min-width: 1100px) {
-    .home {
-      padding: 10% 20% 0 20%;
-    }
-  }
-  @media only screen and (min-width: 1400px) {
-    .home {
-      padding: 10% 25% 0 25%;
-    }
-  }
-  @media only screen and (min-width: 1700px) {
-    .home {
-      padding: 10% 30% 0 30%;
-    }
-  }
-}
-
-/*padding for typeIt items*/
-#projectsName, .about-title, #findMe {
-  padding-left: 1em;
 }

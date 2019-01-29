@@ -1,0 +1,133 @@
+html {
+  background-color: #222;
+}
+
+header {
+  background: url('brexit.jpg') center center no-repeat;
+  background-size: cover;
+  /*background: linear-gradient(to top right, #ddbe1f, #191e67);*/
+  height: 180px;
+  text-align: center;
+  text-shadow: 2px 2px 5px #444;
+}
+
+#brexit {
+  font-family: 'Bree Serif';
+  font-size: 50px;
+  color: #ff334c;
+  text-shadow: 3px 3px 2px #000;
+}
+
+#brexit span {
+  color: #fff;
+}
+
+#count {
+  font-family: 'Prompt', sans-serif;
+  font-size: 26px;
+  margin: -20px 0 10px;
+  color: #ccc;
+}
+
+#days, #time {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 25px;
+  font-weight: 600;
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 200px;
+  margin: 0 auto;
+}
+
+#days {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+#time {
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  margin-top: 1px;
+}
+
+
+.content {
+  padding-top: 10px;
+  background-color: #222;
+}
+
+.content > p {
+  font-size: 16px;
+  text-align: center;
+  font-weight: bold;
+  color: #ccc;
+  margin-bottom: 0;
+}
+
+.content > h6 {
+  color: #999;
+  font-size: 10px;
+  text-align: center;
+  margin: 0 0 5px 0;
+}
+
+.content ul {
+  list-style: none;
+  padding: 0 5px 10px 5px;
+}
+
+.content ul li {
+  /*height: 140px;*/
+  background-color: #aaa;
+  border-radius: 10px;
+  padding: 5px;
+}
+
+.top-row * {
+  padding: 0 5px 5px 5px !important;
+  color: #777;
+}
+
+.source {
+  text-align: right;
+}
+
+.description {
+  display: inline-block;
+  margin: 0;
+}
+
+.container {
+  position: relative;
+}
+
+.article {
+  width: 100%;
+  text-align: center;
+  margin: 0 !important;
+}
+
+.article a {
+  display: inline-block;
+  text-align: center;
+  padding: 5px 30px;
+  border: #337ab7 1px solid;
+  border-radius: 5px;
+}
+
+.title {
+  font-weight: bold;
+  vertical-align: top;
+  font-size: 11px;
+}
+
+.desc {
+  font-size: 10px;
+}
+
+.imgDiv {
+  background: center center / auto 100px no-repeat;
+  height: 100px;
+  width: 100px;
+  overflow: hidden;
+}
