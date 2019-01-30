@@ -121,7 +121,5 @@ fetch(fetchUrl)
                 article.source.name,
                 article.url,
                 article.urlToImage);
-
-      console.log(article);
     })
   })
