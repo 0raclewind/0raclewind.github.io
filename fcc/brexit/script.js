@@ -93,6 +93,7 @@ function createItem(publishedAt, title, description, source, url, urlToImage) {
 
   articleDiv.setAttribute("class", 'row article');
   articleA.href = url;
+  articleA.target = "_blank";
   articleA.append('Read full article');
   articleDiv.append(articleA);
 
