@@ -11,10 +11,6 @@ const streamers = [
 	"habathcx",
 	"RobotCaleb",
 	"noobs2ninjas",
-  "MrLlamaSC",
-  "Starladder_CS_en",
-  "PGL",
-  "starladder_cs_en2"
 ];
 
 const streamsUrl = "https://wind-bow.glitch.me/twitch-api/streams/";

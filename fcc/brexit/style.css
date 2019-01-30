@@ -78,9 +78,10 @@ header {
 
 .content ul li {
   /*height: 140px;*/
-  background-color: #aaa;
+  background-color: #ccc;
   border-radius: 10px;
   padding: 5px;
+  margin-bottom: 5px;
 }
 
 .top-row * {
