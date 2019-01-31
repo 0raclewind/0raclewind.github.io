@@ -110,6 +110,7 @@ fetch(fetchUrl)
     return response.json();
   })
   .then(jsonResponse => {
+    console.log(jsonResponse);
     jsonResponse.articles.map(article => {
       let date = article.publishedAt.split("T");
       date[1] = date[1].substring(0, date[1].length - 4);

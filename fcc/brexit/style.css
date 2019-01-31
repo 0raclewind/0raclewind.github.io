@@ -132,3 +132,42 @@ header {
   width: 100px;
   overflow: hidden;
 }
+
+@media screen and (min-width: 330px) {
+  .title {
+    font-size: 13px;
+  }
+  .desc {
+    font-size: 12px;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  header {
+    width: 480px;
+    margin: 0 auto;
+  }
+  body {
+    background-color: #222 !important;
+  }
+  .title {
+    font-size: 14px;
+  }
+  .desc {
+    font-size: 13px;
+  }
+  .content ul {
+    width: 480px;
+    margin: 0 auto;
+  }
+  .container {
+    width: 450px !important;
+    padding: 0 !important;
+  }
+  .top-row {
+    margin: 0 !important;
+  }
+  .description {
+    margin: 0 !important;
+  }
+}
