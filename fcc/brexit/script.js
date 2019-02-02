@@ -1,12 +1,4 @@
-const fetchUrl = 'https://newsapi.org/v2/everything?sources=bbc-news,mirror&q=brexit&from=2019-01-01&sortBy=publishedAt&apiKey=ab39bcbaefda4f2ba6d31773baefa072';
-const article = {
-  publishedAt: '2019-01-30T06:47:78Z',
-  title: "Scotland's papers: May's 'mandate' for new Brexit talks",
-  description: "Most papers lead with Theresa May securing the backing of MPs to renegotiate her Brexit deal.",
-  source: "BBC News",
-  url: "https://www.bbc.co.uk/news/uk-scotland-47053444",
-  urlToImage: "https://ichef.bbci.co.uk/news/1024/branded_news/14153/production/_105395228_herald-page-001.jpg"
-};
+const fetchUrl = 'https://newsapi.org/v2/everything?sources=bbc-news,mirror&q=brexit&sortBy=publishedAt&apiKey=ab39bcbaefda4f2ba6d31773baefa072';
 var countDownDate = new Date("Mar 29, 2019 23:00:00").getTime();
 
 var x = setInterval(function() {
