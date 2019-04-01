@@ -1,5 +1,5 @@
 const fetchUrl = 'https://newsapi.org/v2/everything?sources=bbc-news,mirror&q=brexit&sortBy=publishedAt&apiKey=ab39bcbaefda4f2ba6d31773baefa072';
-var countDownDate = new Date("Mar 29, 2019 23:00:00").getTime();
+var countDownDate = new Date("Apr 12, 2019 23:00:00").getTime();
 
 var x = setInterval(function() {
 
@@ -37,7 +37,7 @@ function checkTime(time) {
 
 function checkDays(days) {
 	var daysStr = days.toString();
-    if (daysStr[1] == "1") {
+    if (daysStr[daysStr.length - 1] == "1" && days > 11) {
     	return "day";
     } else {
     	return "days";
@@ -102,7 +102,6 @@ fetch(fetchUrl)
     return response.json();
   })
   .then(jsonResponse => {
-    console.log(jsonResponse);
     jsonResponse.articles.map(article => {
       let date = article.publishedAt.split("T");
       date[1] = date[1].substring(0, date[1].length - 4);
