@@ -1,5 +1,5 @@
 const fetchUrl = 'https://newsapi.org/v2/everything?sources=bbc-news,mirror&q=brexit&sortBy=publishedAt&apiKey=ab39bcbaefda4f2ba6d31773baefa072';
-var countDownDate = new Date("Apr 12, 2019 23:00:00").getTime();
+var countDownDate = new Date("Oct 31, 2019 23:00:00").getTime();
 
 var x = setInterval(function() {
 
