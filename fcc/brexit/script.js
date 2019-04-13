@@ -23,7 +23,8 @@ var x = setInterval(function() {
   // If the count down is over, write some text
   if (distance < 0) {
     clearInterval(x);
-    document.getElementById("demo").innerHTML = "EXPIRED";
+    document.getElementById("days").innerHTML = "Brexit time";
+    document.getElementById("time").innerHTML = "Expired";
   }
 }, 1000);
 
@@ -37,7 +38,7 @@ function checkTime(time) {
 
 function checkDays(days) {
 	var daysStr = days.toString();
-    if (daysStr[daysStr.length - 1] == "1" && days > 11) {
+    if (daysStr[daysStr.length - 1] == "1" && days > 11 || days == 1) {
     	return "day";
     } else {
     	return "days";

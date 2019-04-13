@@ -6,7 +6,7 @@ header {
   background: url('brexit.jpg') center center no-repeat;
   background-size: cover;
   /*background: linear-gradient(to top right, #ddbe1f, #191e67);*/
-  height: 180px;
+  height: 200px;
   text-align: center;
   text-shadow: 2px 2px 5px #444;
 }
@@ -22,10 +22,17 @@ header {
   color: #fff;
 }
 
+#name {
+  font-size: 18px;
+  font-family: 'Prompt', sans-serif;
+  color: #ccc;
+  margin-top: -15px;
+}
+
 #count {
   font-family: 'Prompt', sans-serif;
   font-size: 26px;
-  margin: -20px 0 10px;
+  margin: -5px 0 5px;
   color: #ccc;
 }
 
@@ -77,9 +84,10 @@ header {
 }
 
 .content ul li {
-  /*height: 140px;*/
-  background-color: #ccc;
+  background-color: #111;
   border-radius: 10px;
+  border-right: #666 1px solid;
+  border-left: #666 1px solid;
   padding: 5px;
   margin-bottom: 5px;
 }
@@ -112,7 +120,9 @@ header {
   display: inline-block;
   text-align: center;
   padding: 5px 30px;
-  border: #337ab7 1px solid;
+  border-top: #999 1px solid;
+  border-bottom: #999 1px solid;
+  color: #ccc;
   border-radius: 5px;
 }
 
@@ -120,10 +130,12 @@ header {
   font-weight: bold;
   vertical-align: top;
   font-size: 11px;
+  color: #ccc;
 }
 
 .desc {
   font-size: 10px;
+  color: #aaa;
 }
 
 .imgDiv {
