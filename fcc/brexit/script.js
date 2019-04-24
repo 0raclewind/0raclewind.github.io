@@ -48,53 +48,22 @@ function checkDays(days) {
 function createItem(publishedAt, title, description, source, url, urlToImage) {
   const ul = document.querySelector('ul');
   // Create elements
-  const li = document.createElement('li'),
-        containerDiv = document.createElement('div'),
-        topRowDiv = document.createElement('div'),
-        dateDiv = document.createElement('div'),
-        sourceDiv = document.createElement('div'),
-        descriptionDiv = document.createElement('div'),
-        imgDiv = document.createElement('div'),
-        textDiv = document.createElement('div'),
-        titleP = document.createElement('p'),
-        descP = document.createElement('p'),
-        articleDiv = document.createElement('div'),
-        articleA = document.createElement('a')
-
-  containerDiv.setAttribute("class", 'container');
-
-  topRowDiv.setAttribute("class", 'row top-row');
-  dateDiv.setAttribute("class", 'col-xs-6 date');
-  sourceDiv.setAttribute("class", 'col-xs-6 source');
-  dateDiv.append(publishedAt);
-  sourceDiv.append(source);
-  topRowDiv.append(dateDiv);
-  topRowDiv.append(sourceDiv);
-
-  descriptionDiv.setAttribute("class", 'row description');
-  imgDiv.setAttribute("class", 'imgDiv col-xs-4');
-  imgDiv.style = `background-image: url(${urlToImage})`;
-  textDiv.setAttribute("class", 'col-xs-8');
-  titleP.setAttribute("class", 'title');
-  descP.setAttribute("class", 'desc');
-  titleP.append(title);
-  descP.append(description);
-  textDiv.append(titleP);
-  textDiv.append(descP);
-  descriptionDiv.append(imgDiv);
-  descriptionDiv.append(textDiv);
-
-  articleDiv.setAttribute("class", 'row article');
-  articleA.href = url;
-  articleA.target = "_blank";
-  articleA.append('Read full article');
-  articleDiv.append(articleA);
-
-  containerDiv.append(topRowDiv);
-  containerDiv.append(descriptionDiv);
-  containerDiv.append(articleDiv);
-
-  li.append(containerDiv);
+  const li = document.createElement('li');
+  li.innerHTML = `<a href="${url}" target=_blank>
+                    <div class="container">
+                      <div class="row top-row">
+                        <div class="col-xs-6 date">${publishedAt}</div>
+                        <div class="col-xs-6 source">${source}</div>
+                      </div>
+                      <div class="row description">
+                        <div class="imgDiv col-xs-4" style="background-image: url('${urlToImage}')"></div>
+                        <div class="col-xs-8">
+                          <p class=title>${title}</p>
+                          <p class=desc>${description}</p>
+                        </div>
+                      </div>
+                    </div>
+                  </a>`;
   ul.append(li);
 }
 
