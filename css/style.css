@@ -84,6 +84,7 @@ color: #fff !important;
   background-position: center 0px;
   height: 100vh;
   min-height: 100%;
+  margin: 0;
 }
 
 .home h1 {
@@ -151,7 +152,7 @@ color: #fff !important;
 }
 
 .project {
-  display: none;
+  display: inline;
   opacity: 0;
   margin: 10% 2% 3% 2%;
 }
@@ -166,6 +167,11 @@ color: #fff !important;
   margin-left: 15%;
   border: 1px solid #aaa;
   border-radius: 10px;
+}
+
+#camp {
+  color: #2681ad;
+  font-weight: bold;
 }
 
 .description {
@@ -312,12 +318,17 @@ color: #fff !important;
   }
 
   .home {
-    font-size: 28px;
+    font-size: 20px;
   }
 
   .home h1:first-child {
     margin-top: 25%;
   }
+
+  .home h1, #typing {
+    width: 500px;
+  }
+
 
   .project {
     margin-top: 5%;
@@ -336,7 +347,7 @@ color: #fff !important;
 
 @media only screen and (min-width: 992px) {
   .home {
-    padding: 0 10% 0 10%;
+    padding: 0 5% 0 5%;
   }
 
   .home h1:first-child {
@@ -344,7 +355,7 @@ color: #fff !important;
   }
 
   .home h1 {
-    font-size: 2.5em;
+    font-size: 2em;
   }
 
   .project {
@@ -373,7 +384,7 @@ color: #fff !important;
 
 @media only screen and (min-width: 1200px) {
   .home h1:first-child {
-    margin-top: 150px;
+    margin-top: 250px;
   }
 
   .home h1 {
@@ -382,7 +393,7 @@ color: #fff !important;
   }
 
   .home {
-    padding: 0 20% 0 20%;
+    padding: 0 10% 0 10%;
   }
 
   .project p {

@@ -1,9 +1,9 @@
-// $(document).ready(function() {
-//   $("body").on('click','#mainNavBar', function(){ $(this).collapse("hide") });
-//   setBindings();
-//   objectAppear();
-//   typing();
-// });
+$(document).ready(function() {
+  $("body").on('click','#mainNavBar', function(){ $(this).collapse("hide") });
+  setBindings();
+  objectAppear();
+  typing();
+});
 
 //Smooth scrolling
 function setBindings() {
@@ -83,18 +83,18 @@ function objectAppear() {
 
   $('.project').revealOnScroll();
 
-  // $(window).on('scroll', function() {
-  //   windowHeight = $(window).height();
-  //   scrollFromTop = $(window).scrollTop();
-  //   windowScrollPosBottom = scrollFromTop + windowHeight;
-  //   $('.project').revealOnScroll();
-  //   $('#projectsName').typeOnScroll('PROJECTS', 170);
-  //   $('.about-title').typeOnScroll('ABOUT ME', 100);
-  //   $('#findMe').typeOnScroll('FIND ME', 0);
-  //   $('.about p').fadeInOnScroll(100, 1);
-  //   $('.find>a>i').fadeInOnScroll(0, .5);
-  //
-  // })
+  $(window).on('scroll', function() {
+    windowHeight = $(window).height();
+    scrollFromTop = $(window).scrollTop();
+    windowScrollPosBottom = scrollFromTop + windowHeight;
+    $('.project').revealOnScroll();
+    $('#projectsName').typeOnScroll('PROJECTS', 170);
+    $('.about-title').typeOnScroll('ABOUT ME', 100);
+    $('#findMe').typeOnScroll('FIND ME', -50);
+    $('.about p').fadeInOnScroll(100, 1);
+    $('.find>a>i').fadeInOnScroll(0, .5);
+
+  })
 }
 
 
